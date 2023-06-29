@@ -1,7 +1,16 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Courgette, Noto_Sans_JP } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const notojp = Noto_Sans_JP({
+  subsets: ["latin"],
+  variable: "--font-notojp",
+});
+
+const courgette = Courgette({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-courgette",
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${notojp.variable} ${courgette.variable} font-notojp`}>{children}</body>
     </html>
   )
 }
