@@ -6,10 +6,10 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     {
-      name: '@storybook/addon-styling',
+      name: "@storybook/addon-styling",
       options: {
         postcssLoaderOption: {
-          implementation: require('postcss'),
+          implementation: require("postcss"),
         },
       },
     },

@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 8080",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "format": "prettier --write **/*.{ts,tsx} --ignore-path .prettierignore",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -34,7 +35,11 @@
     "@storybook/nextjs": "^7.0.24",
     "@storybook/react": "^7.0.24",
     "@storybook/testing-library": "^0.0.14-next.2",
+    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-storybook": "^0.6.12",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
     "storybook": "^7.0.24",
     "webpack": "^5.88.1"
   }
