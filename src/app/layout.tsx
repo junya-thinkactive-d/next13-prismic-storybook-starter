@@ -1,3 +1,4 @@
+import Analytics from "@/libs/GoogleAnalytics"
 import { courgette, notojp } from "./fonts";
 import "./globals.css";
 
@@ -9,6 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
+      <head>
+        <Analytics />
+      </head>
       <body className={`${notojp.variable} ${courgette.variable} font-notojp`}>{children}</body>
     </html>
   );
