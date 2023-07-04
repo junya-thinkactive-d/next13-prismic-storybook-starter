@@ -1,5 +1,5 @@
 {
-  "repositoryName": "sotokurashi-website",
+  "repositoryName": "",
   "adapter": "@slicemachine/adapter-next",
   "libraries": ["./slices"]
 }
