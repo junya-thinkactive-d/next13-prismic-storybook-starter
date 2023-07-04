@@ -1,6 +1,11 @@
+import { PrismicPreview } from "@prismicio/next"
+
 import Analytics from "@/libs/GoogleAnalytics"
-import { courgette, notojp } from "./fonts";
+
 import "./globals.css";
+import { courgette, notojp } from "./fonts";
+import { repositoryName } from '../../prismicio';
+
 
 export const metadata = {
   title: "Create Next App",
@@ -14,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Analytics />
       </head>
       <body className={`${notojp.variable} ${courgette.variable} font-notojp`}>{children}</body>
+      <PrismicPreview repositoryName={repositoryName} />
     </html>
   );
 }

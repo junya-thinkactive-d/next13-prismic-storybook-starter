@@ -3,7 +3,10 @@
 import { usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
 import { Suspense, useEffect } from "react";
+
 import { GA_ID, pageview } from "@/libs/gtag";
+
+
 
 const GoogleAnalytics = () => {
   const pathname = usePathname();
